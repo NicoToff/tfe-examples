@@ -1,4 +1,4 @@
-// app/graphql.tsx
+// app/graphql/page.tsx
 import { request, gql } from "graphql-request";
 
 const api = "https://spacex-production.up.railway.app/";
@@ -21,7 +21,7 @@ type GqlResponse = {
 };
 
 export default async function GraphQLPage() {
-  const res = (await request(api, document)) as GqlResponse;
+  const res = await request<GqlResponse>(api, document);
 
   return (
     <main>
