@@ -6,11 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "codegen": "graphql-codegen --config codegen.ts"
   },
   "dependencies": {
     "@radix-ui/colors": "^0.1.8",
     "@radix-ui/react-alert-dialog": "^1.0.3",
+    "@tanstack/react-query": "^4.29.7",
     "@types/node": "18.15.13",
     "@types/react": "18.0.37",
     "@types/react-dom": "18.0.11",
@@ -23,5 +25,12 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.4"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "3.3.1",
+    "@graphql-codegen/client-preset": "3.0.1",
+    "@graphql-codegen/introspection": "3.0.1",
+    "@graphql-typed-document-node/core": "^3.2.0",
+    "@tanstack/eslint-plugin-query": "^4.29.8"
   }
 }

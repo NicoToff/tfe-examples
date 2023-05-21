@@ -1,4 +1,4 @@
-import { AlertDialogDemo } from "../../../components/alert";
+import { AlertDialogDemo } from "../../components/alert";
 // app/radix.tsx
 export default function IndexPage() {
   return (
